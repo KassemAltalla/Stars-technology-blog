@@ -67,6 +67,19 @@ body {
     color: var(--primary-100) !important;
 }
 
+.dropdown-menu {
+    background-color: var(--bg-200);
+}
+
+.dropdown-item {
+    color: #00BFFF;
+}
+
+.dropdown-item:hover {
+    color: black !important;
+    background-color: #00BFFF;
+}
+
 .navbar a:hover {
     color: var(--primary-300);
 }
@@ -116,6 +129,10 @@ body {
 .myCard img {
     width: 100%;
     transition: transform 0.3s ease;
+}
+
+.item {
+    margin-bottom: 20px;
 }
 
 .item:hover .myCard img {
@@ -174,6 +191,7 @@ body {
 }
 
 .post {
+    width: 95%;
     background-color: var(--bg-300);
     border-radius: 15px;
     padding: 20px;
@@ -311,6 +329,7 @@ h2 {
 
 .postArticle {
     flex-direction: column;
+    width: 95%;
 }
 
 .postArticle .articleTitle {
@@ -358,6 +377,7 @@ h3 {
 
 .author,
 .recommend {
+    width: 95%;
     background-color: var(--bg-300);
     border-radius: 20px;
     padding: 20px;
@@ -410,4 +430,49 @@ h3 {
 .postsLike {
     display: flex;
     justify-content: space-around;
+}
+
+/* ////////////// trend //////////////////// */
+.trend {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #00a2e0;
+}
+
+/* //////////////   about   ////////////////// */
+.aboutTitle {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #00a2e0;
+    width: fit-content;
+    margin: auto;
+}
+
+.aboutCard {
+    margin: auto;
+    width: 70%;
+    background-color: var(--bg-300);
+    border: 5px groove #00619a;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+.cardContant {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.cardContant img {
+    width: 30%;
+    border-radius: 50%;
 }
