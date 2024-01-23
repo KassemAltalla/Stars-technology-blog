@@ -44,8 +44,17 @@ body {
 
 .myNavbar {
     background-color: var(--bg-100) !important;
-    padding-left: 40px;
+    padding-left: 10px;
     margin-bottom: 50px;
+}
+
+.navbar-brand img {
+    width: 90px;
+    transition: 0.5s;
+}
+
+.colorLogo {
+    display: none;
 }
 
 .navbar-brand,
@@ -80,8 +89,21 @@ body {
     background-color: #00BFFF;
 }
 
+.navbar .navbar-brand {
+    width: 30%;
+    display: flex;
+}
+
 .navbar a:hover {
     color: var(--primary-300);
+}
+
+.navbar a:hover .whiteLogo {
+    display: none;
+}
+
+.navbar a:hover .colorLogo {
+    display: block;
 }
 
 .navbar .form-control {
